@@ -69,6 +69,14 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void resetState() {
+    setState(() {
+      myHand = null;
+      computerHand = null;
+      result = null;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -120,6 +128,16 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
+          FloatingActionButton(
+            onPressed: resetState,
+            child: const Text(
+              '↩︎',
+              style: TextStyle(fontSize: 30),
+            ),
+          ),
+          const SizedBox(
+            width: 16,
+          ),
           FloatingActionButton(
             onPressed: () {
               setState(() {

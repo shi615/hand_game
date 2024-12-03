@@ -4,4 +4,4 @@
 
 ## Demo
 
-<video width='40%' src='/assets/video/01.mov'>
+<img width='30%' src='/assets/video/01.gif' alt='デモ動画'>
